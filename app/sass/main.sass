@@ -1,0 +1,235 @@
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+@font-face 
+    font-family: "Ostrich Sans" /* Имя шрифта */
+    src: url("../fonts/OstrichSans-Black.otf") /* Путь к файлу со шрифтом */
+
+.container
+    width: 100%
+    height: 100vh
+    max-width: 2000px
+    min-width: 320px
+    #gallery
+        width: 100%
+        height: 93%
+        background: url('../img/studio.jpg')
+        background-size: cover
+        background-attachment: fixed
+        position: relative
+        .curtain
+            width: 100%
+            height: 100%
+            position: absolute
+            left: 0
+            top: 0
+            padding: 0 130px
+            background-color: transparent
+            overflow-y: scroll
+            .logo
+                background-color: #fff
+                padding: 40px
+                display: inline-block
+                position: fixed
+            .mini
+                height: auto
+                padding: 0 15px 18px 15px
+                background-color: #fff
+                width: 188px
+                position: absolute
+                top: 0
+                right: 130px
+                display: none
+                p
+                    font: 12px Arial, sans-serif
+                    text-align: right
+                    line-height: 52px
+                li
+                    list-style-type: none
+                    margin-top: 18px 
+                    &:first-of-type
+                        margin-top: 0
+                    a
+                        text-decoration: none
+                        img
+                            display: block
+                            margin: 0 auto
+           
+                
+    footer
+        width: 100%
+        height: 7%
+        padding: 0 130px
+        ul 
+            position: relative
+            li
+                list-style-type: none
+                display: inline-block
+                padding: 0 15px
+                a
+                    text-decoration: none
+                    text-transform: uppercase
+                    font: 18px "Ostrich Sans", sans-serif
+                    color: black
+                    line-height: 46px
+                    transition: all 0.3s
+                    &:hover
+                        color: #86b11e
+                .subPage
+                    max-width: 50vw
+                    max-height: 90vh
+                    background-color: transparentize(#fff, 0.2)
+                    padding: 50px 35px 0 35px
+                    position: absolute
+                    bottom: 46px
+                    left: center
+                    display: none
+                .active
+                    display: block
+                #aboutList
+                    h3, p
+                        text-align: center
+                    h3
+                        margin-bottom: 10px
+                    p    
+                        margin-bottom: 30px
+                        text-align: justify
+                    #team
+                        display: flex
+                        .teamMember
+                            h4, p
+                                text-align: center
+                            img
+                                display: block
+                                margin: 0 auto
+                                margin-bottom: 10px
+                #service  
+                    h3
+                        margin-bottom: 30px
+                        text-align: center
+                    .serviceDesc
+                        display: flex
+                        margin-bottom: 50px
+                        div
+                            text-align: center
+                            i
+                                font-size: 50px
+                                margin-bottom: 20px
+                            h4
+                                margin-bottom: 20px
+                #portfolioAlbums
+                    .title
+                       
+                        display: inline-block
+                        font: 20px "Ostrich Sans", sans-serif
+                    ul
+                        
+                        display: inline-block
+                        li
+                            display: inline-block
+                            padding: 10px
+                            a
+                                display: block
+                                color: #000
+                                font: 16px "Ostrich Sans", sans-serif
+                            .current
+                                color: #86b11e
+                    .albumCovers
+                        display: flex
+                        flex-wrap: wrap
+                        flex-direction: row
+                        justify-content: space-around
+                        align-content: space-between 
+                        .album
+                            margin-bottom: 12px
+                            position: relative 
+                            img
+                                display: block
+                                max-width: 100%
+                                height: auto 
+                            .overlay
+                                background-color: transparentize(#000, 0.3)
+                                position: absolute
+                                width: 0
+                                height: 100%
+                                transition: all, 0.3s
+                                display: flex
+                                flex-direction: column
+                                justify-content: center
+                                align-items: center
+                                margin: 0 auto
+                                h6, i
+                                    color: transparent
+                                    transition: all, 0.3s
+                                a   
+                                    background-color: transparent
+                                    transition: all, 0.3s
+                            &:hover
+                                .overlay
+                                    h6
+                                        color: #fff
+                                        font-size: 10px
+                                    a
+                                        display: block
+                                        width: 40%
+                                        height: 40%
+                                        background-color: transparentize(#fff, 0.4)
+                                        border-radius: 5px
+                                        margin-bottom: 20px
+                                        text-align: center
+                                        padding: 0.6em 0;
+
+                                        i
+                                            color: #000
+                                            font-size: 30px
+                            &:nth-of-type(3n-2),
+                            &:nth-of-type(3n)
+                                .overlay
+                                    top: 0
+                            &:nth-of-type(3n-2)
+                                .overlay
+                                    left: 0
+                            &:nth-of-type(3n)
+                                .overlay
+                                    right: 0
+                            &:hover
+                                .overlay
+                                    width: 100%
+                            &:nth-of-type(2),
+                            &:nth-of-type(5),
+                            &:nth-of-type(8)
+                                .overlay
+                                    width: 100%
+                                    height: 0
+                            &:nth-of-type(2),
+                            &:nth-of-type(5)
+                                .overlay
+                                    top: 0
+                            &:nth-of-type(8)
+                                .overlay
+                                    bottom: 0
+                            &:hover
+                                .overlay
+                                    height: 100%
+                            &:nth-of-type(8)
+                                .overlay
+                                    bottom: 0
+                #contacts
+                    h3
+                        margin-bottom: 40px                
+                            
+                        
+                            
+                                
+                                
+                            
+                
+                    
+                            
+                
+        
+        
+    
+    
